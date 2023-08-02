@@ -32,14 +32,14 @@
             <ul id="tabela">
 
             
-                <a href="../home_page/index.html"><li> Home </li></a>
-                <hr>
-                <a href="#"><li> Art </li></a>
-                <hr>
-                <a href="#"><li> Photo </li></a>
-                <hr>
-                <a href="#"><li> Music </li></a>
-                <hr>
+                <a id="home" href="../home_page/index.html"><li> Home </li></a>
+                <hr id="linhas">
+                <a id="art" href="#"><li> Art </li></a>
+                <hr id="linhas1">
+                <a id="photo" href="#"><li> Photo </li></a>
+                <hr id="linhas2">
+                <a id="music" href="#"><li> Music </li></a>
+                <hr id="linhas3">
     
             </ul>
             
@@ -78,18 +78,46 @@
     
     <script>
         function clickMenu(){
-            if (tabela.style.display == 'block'){
-                tabela.style.display = 'none'
+            if (tabela.style.height == '300px'){
+                
+                tabela.style.height = '0px'
+                tabela.style.transition = '0.7s'
+
+                linhas.style.display = 'none'
+                linhas1.style.display = 'none'
+                linhas2.style.display = 'none'
+                linhas3.style.display = 'none'
+
+                home.style.display = 'none'
+                art.style.display = 'none'
+                photo.style.display = 'none'
+                music.style.display = 'none'
             }else{
-                tabela.style.display = 'block'
-                tabela.style.transition = '2s'
+                
+                tabela.style.height = '300px'
+                
+                tabela.style.transition = '0.7s'
+
+                linhas.style.display = 'block'
+                linhas1.style.display = 'block'
+                linhas2.style.display = 'block'
+                linhas3.style.display = 'block'
+
+                home.style.display = 'block'
+                art.style.display = 'block'
+                photo.style.display = 'block'
+                music.style.display = 'block'
+                
             }
         }
+
+    
         function clickSearch(){
 
 
             if (search.style.display == 'inline'){
                 search.style.display = 'none'
+                
                 
             }else{
                 search.style.display = 'inline'
