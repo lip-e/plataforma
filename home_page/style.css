@@ -42,8 +42,12 @@ body {
 }
 #menu {
 
-    float: left;
-    margin-left: 10px;
+    
+   height: 60px;
+   width: 60px;
+   float: left;
+
+   margin-left: 10px;
     
 }
 #menu:hover {
@@ -103,11 +107,12 @@ body {
 
 
 
+
 /* ---------------- Menu (TABELA) -------------*/
 
 ul {
 
-    background-color: red;
+    
 
     text-align: center;
     list-style: none;
@@ -115,6 +120,10 @@ ul {
     position: relative;
     width: 100vw;
     z-index: 0;
+    height: 270px;
+    margin: auto;
+
+    top: 60px;
 
 
 }
@@ -130,9 +139,9 @@ ul  a {
     
     
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
-    transition: color 2.6s ease-in-out;
+    
 }
 
 ul a:hover {
@@ -155,11 +164,11 @@ ul a:hover  + #linhas2 , ul a:hover + #linhas3{
     margin: auto;
     color: #232323;
     border:1px solid;
-    display: none;
+    
 }
 #tabela {
 
-    background-color: red;
+    background-color: var(--cor4);
 }
 
 /* ---------------- MAIN -------------*/

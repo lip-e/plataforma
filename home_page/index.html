@@ -17,7 +17,7 @@
 
             <!--<span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>-->
 
-            <input type="checkbox" id="menu" onclick="clickMenu()">
+            <input type="checkbox" id="menu" onclick="clickMenu()" checked>
             
             
             <div>
@@ -32,42 +32,36 @@
 
             </div>
 
-            <ul id="tabela">
-
-            
-                <a href="#"><li> Home </li></a>
-                <hr>
-                <a href="#"><li> Art </li></a>
-                <hr>
-                <a href="#"><li> Photo </li></a>
-                <hr>
-                <a href="#"><li> Music </li></a>
-                <hr>
-    
-            </ul>
             
            
         </nav>
     </header>
-    
+    <ul id="tabela">
+     
+        <a href="#"><li> Home </li></a>
+        <hr id="linhas">
+        <a href="#"><li> Art </li></a>
+        <hr id="linhas1">
+        <a href="#"><li> Photo </li></a>
+        <hr id="linhas2">
+        <a href="#"><li> Music </li></a>
+        <hr id="linhas3">
 
-        
+    </ul>
+ 
     <main>
 
-        <div class="container" id="green"></div>
-        <div class="container" id="pink"></div>
-
-    
-
+   
         
-       
 
     </main>
+
+
     <script>
 
         function clickMenu(){
             if (document.getElementById('menu').checked){
-                tabela.style.translate = '0px -350px'
+                tabela.style.translate = '0px -270px'
             }else{
                 
                 tabela.style.translate = '0px 0px'
