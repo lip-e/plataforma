@@ -15,7 +15,9 @@
     <header>
         <nav id="navegation">
 
-            <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <!--<span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>-->
+
+            <input type="checkbox" id="menu" onclick="clickMenu()">
             
             
             <div>
@@ -62,14 +64,19 @@
 
     </main>
     <script>
+
         function clickMenu(){
-            if (tabela.style.display == 'block'){
-                tabela.style.display = 'none'
+            if (document.getElementById('menu').checked){
+                tabela.style.translate = '0px -350px'
             }else{
-                tabela.style.display = 'block'
-                tabela.style.transition = '2s'
+                
+                tabela.style.translate = '0px 0px'
+                tabela.style.transition = '1s'
             }
         }
+
+
+
         function clickSearch(){
 
 

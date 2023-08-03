@@ -28,6 +28,8 @@ body {
     height: 60px;
     text-align: right;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.443) ;
+    position: absolute;
+    z-index: 3;
     
     
     
@@ -105,22 +107,20 @@ body {
 
 ul {
 
-    background-color: #ffffffd8;
+    background-color: red;
 
     text-align: center;
     list-style: none;
     display: block;
-    position: absolute;
+    position: relative;
     width: 100vw;
-    z-index: 1;
+    z-index: 0;
 
-    height: 0px;
-    
-    
 
 }
 ul li {
     padding: 20px 0px;
+    
     
 
 }
@@ -128,9 +128,9 @@ ul  a {
 
    position: relative;
     
-    display: none;
+    
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     transition: color 2.6s ease-in-out;
 }
@@ -157,5 +157,10 @@ ul a:hover  + #linhas2 , ul a:hover + #linhas3{
     border:1px solid;
     display: none;
 }
+#tabela {
+
+    background-color: red;
+}
+
 /* ---------------- MAIN -------------*/
 
