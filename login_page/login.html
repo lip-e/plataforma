@@ -14,7 +14,8 @@
     <header>
         <nav id="navegation">
 
-            <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            
+            <input type="checkbox" id="menu" onclick="clickMenu()" checked>
             
             
             <div>
@@ -29,27 +30,24 @@
 
             </div>
 
-            <ul id="tabela">
-
-            
-                <a id="home" href="../home_page/index.html"><li> Home </li></a>
-                <hr id="linhas">
-                <a id="art" href="#"><li> Art </li></a>
-                <hr id="linhas1">
-                <a id="photo" href="#"><li> Photo </li></a>
-                <hr id="linhas2">
-                <a id="music" href="#"><li> Music </li></a>
-                <hr id="linhas3">
-    
-            </ul>
-            
            
-        </nav>
-
-        
-
-        
+        </nav> 
     </header>
+
+    <ul id="tabela">
+
+            
+        <a id="home" href="../home_page/index.html"><li> Home </li></a>
+        <hr id="linhas">
+        <a id="art" href="#"><li> Art </li></a>
+        <hr id="linhas1">
+        <a id="photo" href="#"><li> Photo </li></a>
+        <hr id="linhas2">
+        <a id="music" href="#"><li> Music </li></a>
+        <hr id="linhas3">
+
+    </ul>
+    
 
     <!--  main part  -->
 
@@ -77,43 +75,16 @@
  
     
     <script>
+        
         function clickMenu(){
-            if (tabela.style.height == '300px'){
-                
-                
-                
-
-                linhas.style.display = 'none'
-                linhas1.style.display = 'none'
-                linhas2.style.display = 'none'
-                linhas3.style.display = 'none'
-
-                
-                home.style.color = 'transparent'
-                home.style.transition = '1s'
-                home.style.display = 'none'
-
-                art.style.color = 'transparent'
-                art.style.transition = '1s'
-                art.style.display = 'none'
-
-
-                photo.style.color = 'transparent'
-                photo.style.transition = '1s'
-                photo.style.display = 'none'
-
-                music.style.color = 'transparent'
-                music.style.transition = '1s'
-                music.style.display = 'none'
-
+            if (document.getElementById('menu').checked){
+                tabela.style.translate = '0px -270px'
             }else{
                 
-                tabela.style.translate = '0px 200px'
-
-                
+                tabela.style.translate = '0px 0px'
+                tabela.style.transition = '1s'
             }
         }
-
     
         function clickSearch(){
 

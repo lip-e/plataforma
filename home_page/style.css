@@ -133,7 +133,7 @@ ul li {
     
 
 }
-ul  a {
+ul > a {
 
    position: relative;
     
